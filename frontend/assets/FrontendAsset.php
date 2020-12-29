@@ -7,6 +7,7 @@
 
 namespace frontend\assets;
 
+use common\assets\FontAwesome;
 use common\assets\Html5shiv;
 use yii\bootstrap\BootstrapAsset;
 use yii\web\AssetBundle;
@@ -43,5 +44,6 @@ class FrontendAsset extends AssetBundle
         YiiAsset::class,
         BootstrapAsset::class,
         Html5shiv::class,
+        FontAwesome::class,
     ];
 }

@@ -1,0 +1,253 @@
+/* 1.2 rev 1412181400 */
+
+/*
+    Main carousel wrapper.
+*/
+.kc-wrap {
+    /* Various commands to stop items being selected when mouse-dragging/touching. */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Disable IE10/11 default actions */
+    -ms-touch-action: none;
+    overflow:hidden;
+    position:relative;
+    /*  background-image:url('background.png');*/
+    /* background-color: #f8f8f8;*/
+    /*border: 1px solid #f4f4f4;*/
+    background-position: center;
+    width:100%;
+    /* This makes wrapper scale vertically in proportion to width */
+    padding-bottom:35%;
+}
+
+.kc-wrap.kc-fixed{
+    height: 370px;
+    padding: 0;
+}
+.kc-horizon {
+    visibility:hidden;
+}
+/*
+    This wraps carousel items.
+*/
+.kc-item {
+    position:absolute;
+    /* These sizes are from the examples - change as appropriate */
+    /*    width:188px;
+        height:250px;*/
+
+    width:240px;
+    height:300px;
+
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    visibility:hidden;
+}
+
+.kc-item .main-app-card {
+    /* border: 1px solid #ddd;
+     margin-bottom: 20px;
+     overflow: auto;*/
+    background-color: #fff;
+    /*margin-bottom: 0px;*/
+    position: relative;
+    height: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.kc-item .main-app-card .imgIcon {
+    pointer-events: none;   /* Make images non-selectable. */
+    max-width: 50px;
+    /*width: 50px;*/
+}
+
+.kc-item .main-app-card .caption {
+    padding: 0 20px;
+    min-height: unset;
+}
+.kc-item .main-app-card .caption {
+    padding: 8px 20px;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.kc-item .main-app-card .card-title{
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.kc-item .main-app-card.working-card .card-title{
+    padding-bottom: 0px;
+}
+.kc-item .personal-info-card .info-row{
+    padding-bottom: 12px;
+}
+.kc-item .info-row.paddingLeft{
+    padding-left: 20px;
+}
+.kc-item .main-app-card .info-row i {
+    padding: 0 10px;
+}
+.kc-item .social-card .info-row i {
+    padding: 0 10px;
+    font-size: 20px;
+}
+.kc-item .main-app-card .info-row .lessPadding i{
+    padding: 0 4px 0px 0px;
+    font-size: 8px;
+}
+.kc-item .personal-info-card .info-row.mobile a{
+
+}
+.kc-item .main-app-card .info-row.full{
+    width: 100%;
+}
+.kc-item .more-card .info-row.full{
+    border-bottom: 1px solid #ccc;
+}
+.kc-item .main-app-card .info-row.fullIconic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-bottom: 1px solid #ccc;
+}
+.kc-item .main-app-card .info-row.full p{
+    text-align: center;
+    font-size: 12px;
+}
+.kc-item .main-app-card .button-group {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+}
+.kc-item .main-app-card.working-card .button-group {
+
+    bottom: 8px;
+
+}
+.kc-item .main-app-card .button-group button {
+    width: 70%;
+}
+.kc-item .main-app-card .button-group button a{
+    color: #000;
+    text-decoration: none;
+}
+.kc-item .product-layout{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+}
+
+
+/*
+    Item Shadows are made from three sections, bottom, left and right.
+    This appears to give better performance than using CSS shadows, and minimizes the
+    pixel area of shadow drawn.
+    The image URLs used for the shadows will actually be copied into <img> elements.
+    You can of course change the images if required.
+*/
+
+.kc-shadow-bottom {
+    position:absolute !important;
+    top:100% !important;
+    width:100% !important;
+    height:10% !important;
+    background-image:url(shadow-bottom.png);
+    left:0px !important;
+}
+.kc-shadow-left,.kc-shadow-right {
+    position:absolute !important;
+    top:0% !important;
+    width:10% !important;
+    height:100% !important;
+    left:-10% !important;
+    background-image:url(shadow-left.png);
+}
+.kc-shadow-right {
+    left:100% !important;
+    background-image:url(shadow-right.png);
+}
+
+@-moz-document url-prefix() {
+    /* Fix for FireFox specific dark edge showing on shadows */
+    .kc-shadow-bottom,.kc-shadow-left,.kc-shadow-right {
+        outline: 1px solid transparent;
+    }
+    .kc-reflection {
+        outline: 1px solid transparent;
+    }
+}
+
+/*
+    Reflection.
+    This is applied to an inserted <canvas> element that is the reflection.
+*/
+
+.kc-reflection {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:0px;
+}
+
+/* The wrapping element of navigation buttons (if used) */
+.kc-nav-wrap {
+    display:inline-block;
+    position:absolute;
+    z-index:1000;
+}
+/* Navigation button */
+.kc-nav-button, .kc-nav-button-active {
+    width:16px;
+    height:16px;
+    background-color:#eee /*#888*/;
+    float:left;
+    margin-right:10px;
+    cursor: pointer;
+    border-radius: 16px;
+    border:1px solid rgba(0,0,0,0.5);
+}
+/* Navigation button active */
+.kc-nav-button.active {
+    background-color:#afafaf /*#fff*/;
+}
+
+/* No margin on  last one. */
+.kc-nav-button.last {
+    margin-right:0;
+}
+/*img.img-responsive*/
+/*.kc-front-item:hover .product-layout .product-thumb{
+    animation: shake 0.7s;
+    animation-iteration-count: infinite;
+}*/
+.kc-front-item.kc-shake:hover img{
+    animation: shake 0.7s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -1px) rotate(-1deg); }
+    20% { transform: translate(1px, 1px) rotate(0deg); }
+    30% { transform: translate(-1px, -1px) rotate(1deg); }
+    40% { transform: translate(1px, 1px) rotate(0deg); }
+    50% { transform: translate(-1px, -1px) rotate(-1deg); }
+    60% { transform: translate(1px, 1px) rotate(0deg); }
+    70% { transform: translate(-1px, -1px) rotate(1deg); }
+    80% { transform: translate(1px, 1px) rotate(0deg); }
+    90% { transform: translate(-1px, -1px) rotate(-1deg); }
+    100% { transform: translate(1px, 1px) rotate(0deg); }
+}

@@ -15,7 +15,7 @@ class FontAwesome extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@npm/font-awesome';
+    public $sourcePath = '@bower/font-awesome';
     /**
      * @var array
      */

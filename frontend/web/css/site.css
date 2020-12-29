@@ -1,0 +1,58 @@
+.education-container .title{
+    text-align: center;
+}
+.education-container .title .titleContainer{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.education-container .eduImage{
+    /*max-width: 150px;*/
+    /*margin-top: 20px;*/
+    /*float: right;*/
+    max-width: 150px
+}
+.education-container .exalt{
+    min-height: 150px;
+    border: 1px solid #ccc;
+}
+.mainRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.imageContainer{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-inline-end: 25px;
+}
+.infoContainer{
+    width: 60%;
+}
+
+@media (max-width: 480px) {
+    .mainRow{
+
+    }
+    .imageContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-inline-end: 0px;
+    }
+    .infoContainer{
+        width: 100%;
+    }
+
+
+}

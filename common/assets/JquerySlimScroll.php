@@ -15,7 +15,7 @@ class JquerySlimScroll extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@npm/jquery-slimscroll';
+    public $sourcePath = '@bower/jquery-slimscroll';
     /**
      * @var array
      */

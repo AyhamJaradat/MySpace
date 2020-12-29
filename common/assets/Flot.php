@@ -16,7 +16,7 @@ class Flot extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@npm/flot';
+    public $sourcePath = '@bower/flot';
     /**
      * @var array
      */

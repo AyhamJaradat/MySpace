@@ -61,6 +61,44 @@ class SiteController extends Controller
     }
 
     /**
+     * @return string
+     */
+    public function actionIndex2()
+    {
+        return $this->render('index-default');
+    }
+
+
+    /**
+     * @return string
+     */
+    public function actionEducation()
+    {
+        return $this->render('education');
+    }
+
+    /**
+     * @return string
+     */
+    public function actionCareer()
+    {
+        return $this->render('career');
+    }
+
+    /**
+     * @return string
+     */
+    public function actionProjects()
+    {
+        return $this->render('projects');
+    }
+
+
+
+
+
+
+    /**
      * @return string|Response
      */
     public function actionContact()

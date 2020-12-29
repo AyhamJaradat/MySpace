@@ -1,65 +1,14 @@
 <?php
-/* @var $this yii\web\View */
-$this->title = Yii::$app->name;
-?>
-<div class="site-index">
+/**
+ * Created by PhpStorm.
+ * User: Ayham
+ * Date: 12/26/2020
+ * Time: 5:03 PM
+ */
 
-    <?php echo \common\widgets\DbCarousel::widget([
-        'key' => 'index',
-        'assetManager' => Yii::$app->getAssetManager(),
-        'options' => [
-            'class' => 'slide', // enables slide effect
-        ],
-    ]) ?>
-
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <?php echo common\widgets\DbMenu::widget([
-            'key'=>'frontend-index',
-            'options'=>[
-                'tag'=>'p'
-            ]
-        ]) ?>
-
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+//echo \frontend\widgets\MiniAbout::widget(['view' => $this]);
+// killer carousel
+//echo \frontend\widgets\MainAppCarousel::widget(['view' => $this,
+//'items' => $homePageDTO->getLatestProducts()]);
+echo \frontend\widgets\MainAppCarousel::widget(['view' => $this,
+    'items' => [1,2,3,4,5,6,7,8]]);

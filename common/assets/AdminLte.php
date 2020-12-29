@@ -20,7 +20,7 @@ class AdminLte extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@npm/admin-lte/dist';
+    public $sourcePath = '@bower/admin-lte/dist';
     /**
      * @var array
      */
