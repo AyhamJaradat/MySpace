@@ -5,6 +5,8 @@ use yii\helpers\Html;
 
 \frontend\assets\FrontendAsset::register($this);
 \frontend\assets\SiteAsset::register($this);
+$icon =Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/favicon.ico');
+$this->title = Yii::$app->name;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -13,6 +15,7 @@ use yii\helpers\Html;
     <meta charset="<?php echo Yii::$app->charset ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo Html::encode($this->title) ?></title>
+    <link rel="icon" type="image/ico" href="<?=$icon?>">
     <?php $this->head() ?>
     <?php echo Html::csrfMetaTags() ?>
 </head>

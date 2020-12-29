@@ -21,14 +21,18 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/exalt_logo.svg');
             ?>
+            <a target="_blank" href="https://exalt-tech.com/">
             <img src="<?= $logoURL ?>" class="img-circle eduImage exalt" width="100%"/>
+            </a>
 
         </div>
 
         <div class="infoContainer">
             <h3>Software Engineer </h3>
-
+            <a target="_blank" href="https://exalt-tech.com/"
+               style="text-decoration: none;color: unset;">
             <h6><p><strong>@ EXALT Technologies</strong></p></h6>
+            </a>
             <h6><p><strong>From 2/2014 to now</strong></p></h6>
             <h4><p><strong>Developing full-stack web and mobile applications</strong></p></h4>
             <br>

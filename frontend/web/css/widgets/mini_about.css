@@ -19,6 +19,9 @@
 }
 
 .user-panel{
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     width: fit-content;
     height: 100px;
     border: 1px solid #cccccc;
@@ -58,4 +61,7 @@
     line-height: 1.35;
     color: #000;
     margin-bottom: 0.5em;
+}
+.user-panel .info a{
+    text-decoration: none !important;
 }

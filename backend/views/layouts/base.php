@@ -7,7 +7,7 @@ use yii\helpers\ArrayHelper;
 /* @var $content string */
 
 $bundle = BackendAsset::register($this);
-
+$icon =Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/favicon.ico');
 $this->params['body-class'] = $this->params['body-class'] ?? null;
 ?>
 
@@ -20,6 +20,7 @@ $this->params['body-class'] = $this->params['body-class'] ?? null;
 
     <?php echo Html::csrfMetaTags() ?>
     <title><?php echo Html::encode($this->title) ?></title>
+    <link rel="icon" type="image/ico" href="<?=$icon?>">
     <?php $this->head() ?>
 
 </head>

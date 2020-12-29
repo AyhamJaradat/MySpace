@@ -1,19 +1,18 @@
 {
-  "name": "yii2-starter-kit/yii2-starter-kit",
-  "description": "Yii2 Starter Kit Application Template",
+  "name": "Ayham Jaradat Personal Space",
+  "description": "Personal Site based on Yii2 Starter Kit Application Template",
   "keywords": [
+    "Ayham Jaradat",
     "yii2",
     "framework",
-    "start",
-    "cms",
-    "application template",
-    "yii2 advanced"
+    "personal site",
+    "cms"
   ],
   "authors": [
     {
-      "name": "Eugene Terentev",
-      "email": "eugene@terentev.net",
-      "homepage": "http://terentev.net"
+      "name": "Ayham Jaradat",
+      "email": "meajaradat@gmail.com",
+      "homepage": "https://ayhamjaradat.space/"
     }
   ],
   "type": "project",

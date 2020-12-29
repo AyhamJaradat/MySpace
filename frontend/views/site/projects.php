@@ -13,20 +13,25 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="titleContainer"><strong><i class="fa fa-tasks"></i> <?php echo "Projects I worked On" ?></strong>
         </div>
     </h2>
-
-    <hr style="    max-width: 50%;">
+    <div class="miniNote"> There is more on <a target="_blank" href="https://github.com/AyhamJaradat">my github</a></div>
+    <hr style="    max-width: 50%; margin-top: 10px;">
     <br>
     <div class="mainRow">
         <div class="imageContainer">
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/cob_login.svg');
             ?>
-            <img src="<?= $logoURL ?>" class="img-circle eduImage exalt" width="100%"/>
+            <a target="_blank" href="https://connectedbusinesses.app/frontend/">
+                <img src="<?= $logoURL ?>" class="img-circle eduImage exalt" width="100%"/>
+            </a>
 
         </div>
 
         <div class="infoContainer">
-            <h3>CoB - Connected Businesses </h3>
+            <a target="_blank" href="https://connectedbusinesses.app/frontend/"
+               style="text-decoration: none;color: unset;">
+                <h3>CoB - Connected Businesses </h3>
+            </a>
 
             <h6><p><strong>#freelancing #full-stack #cross_platform</strong></p></h6>
             <h4><p style="    text-align: justify;"><strong>CoB </strong>– is a networking platform for businesses that
@@ -56,13 +61,17 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/qwilt_logo.svg');
             ?>
-            <img src="<?= $logoURL ?>" class="img-circle eduImage exalt" width="100%"/>
+            <a target="_blank" href="https://qwilt.com/">
+                <img src="<?= $logoURL ?>" class="img-circle eduImage exalt" width="100%"/>
+            </a>
 
         </div>
 
 
         <div class="infoContainer">
-            <h3>Qwilt - Transparent Caching and Video Delivery Platform </h3>
+            <a target="_blank" href="https://qwilt.com/" style="text-decoration: none;color: unset;">
+                <h3>Qwilt - Transparent Caching and Video Delivery Platform </h3>
+            </a>
 
             <h6><p><strong>#freelancing #front-end</strong></p></h6>
 
@@ -87,14 +96,19 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/shabbik_icon.png');
             ?>
-            <img src="<?= $logoURL ?>" class=" eduImage" width="100%"/>
+
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.palteam.shabbik&hl=en">
+                <img src="<?= $logoURL ?>" class=" eduImage" width="100%"/>
+            </a>
 
         </div>
 
 
         <div class="infoContainer">
-            <h3>Shabbik Game</h3>
-
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.palteam.shabbik&hl=en"
+               style="text-decoration: none;color: unset;">
+                <h3>Shabbik Game</h3>
+            </a>
             <h6><p><strong>#puzzle #android #multiplayer</strong></p></h6>
 
             <h4><p style="    text-align: justify;"><strong>Shabbik </strong> - is an entertainment, educational Arabic
@@ -118,14 +132,18 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/mendeleev_icon.png');
             ?>
-            <img src="<?= $logoURL ?>" class=" eduImage" width="100%"/>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mandeleev.game.mandeleev">
+                <img src="<?= $logoURL ?>" class=" eduImage" width="100%"/>
+            </a>
 
         </div>
 
 
         <div class="infoContainer">
-            <h3>Mendeleev Game</h3>
-
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mandeleev.game.mandeleev"
+               style="text-decoration: none;color: unset;">
+                <h3>Mendeleev Game</h3>
+            </a>
             <h6><p><strong>#educational #android </strong></p></h6>
 
             <h4><p style="    text-align: justify;"><strong>Mendeleev </strong> - is a casual educational 2D Android
@@ -152,14 +170,19 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="imageContainer">
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/thesis_slide.png');
+            $thsisPdfURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('pdf/thesisReady.pdf');
             ?>
-            <img src="<?= $logoURL ?>" class=" eduImage exalt" width="100%"/>
+            <a target="_blank" href="<?= $thsisPdfURL ?>">
+                <img src="<?= $logoURL ?>" class=" eduImage exalt" width="100%"/>
+            </a>
 
         </div>
 
 
         <div class="infoContainer">
-            <h3>An Experimental Study On Multiplayer Mobile Games For In-Game Voice Communication Feature</h3>
+            <a target="_blank" href="<?= $thsisPdfURL ?>" style="text-decoration: none;color: unset;">
+                <h3>An Experimental Study On Multiplayer Mobile Games For In-Game Voice Communication Feature</h3>
+            </a>
 
             <h6><p><strong>#master_thesis #voice_communication #usability #WebRTC </strong></p></h6>
 
@@ -193,14 +216,19 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="imageContainer">
             <?php
             $logoURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('img/slide.png');
+            $gradProjPdfURL = Yii::$app->urlManagerFrontend->createAbsoluteUrl('pdf/finalReportFinalPdf.pdf');
             ?>
-            <img src="<?= $logoURL ?>" class=" eduImage exalt" width="100%"/>
+            <a target="_blank" href="<?= $gradProjPdfURL ?>">
+                <img src="<?= $logoURL ?>" class=" eduImage exalt" width="100%"/>
+            </a>
 
         </div>
 
 
         <div class="infoContainer">
-            <h3>SEND Implementation for Android Platform</h3>
+            <a target="_blank" href="<?= $gradProjPdfURL ?>" style="text-decoration: none;color: unset;">
+                <h3>SEND Implementation for Android Platform</h3>
+            </a>
 
             <h6><p><strong>#graduation_project #android_kernel #IPv6 #security</strong></p></h6>
             <h6><p><strong></strong></p></h6>

@@ -1,7 +1,19 @@
+.miniNote{
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+.miniNote a{
+    color: #000000;
+    text-decoration: underline;
+}
 .education-container .title{
     text-align: center;
 }
 .education-container .title .titleContainer{
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
